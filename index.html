@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- This is the default information for Emmet Abbreviation
+    name = check the device the person is on
+    content = make the page the size of the users device
+    initial-scale = at a 1:1 ratio -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- add link to the style.css file 
+    Don't necessarily need the second attribute but tells html what type of file it is 
+    Third attribute is the file name.  Use ./ to show that the file is in the same directory -->
+<link rel="stylesheet" type="text/css" href="./style.css">
+
+    <!-- This is the words on the tab -->
+    <title>My Bio</title>
+</head>
+<body>
+
+
+    <!-- create a class so can center lots of data at once -->
+<div class="centered">
+
+
+    <h1>My Bio</h1>
+    
+    <!--Add a class to this header  
+        Add an ID to this header -->
+    <h2 class="h2-name" id="profile-name">Steph Kuo</h2>
+    
+
+    <!-- create a div and class to be able to style the image -->
+    <div class="img-div">
+        <!-- The class is a way to segregate this image from other images.  All classes need to be different.  Best to be very explicit with the class name
+            so don't use it somewhere else if have a website that is 30 different pages.  Example: homepg-profile-image
+            the ./ represents that the file is in the current folder
+        if want to go up one directory then ../ -->
+        <img class="profile-image" src="./panda.jpeg">
+
+    </div>
+
+      <!-- create a div and class to be able to style the text -->
+    <div class="text-div">
+        
+        <p> text here</p>
+
+    </div>
+    
+    <!-- This will put the next information on the next line -->
+    <br>
+    
+      <!-- create a div and class to be able to style the list -->
+    <div class="list-div">
+        
+        <!-- ul = unordered list - will use bullet points
+        ol = ordered list - will have numbers -->
+        <ul>
+        
+            <li>Email</li>
+            <li>GitHub</li>
+            <li>Portfolio</li>
+        
+        </ul>
+
+    </div>    
+    <!-- target="_blank" says to open the link in a new tab
+    If you are navigating away to an external link than use this attribute.    
+    If you are going to a link on your own website then keep them in the same tab so they don't
+    leave your site -->
+    
+    <!-- Text fater the <a href=""> text is the text that appears on the webpage as the text to click 
+        on to reach the website listed after the href attribute -->
+    <a href="https://www.worldwildlife.org/species/giant-panda" target="_blank">WWF Panda Site</a>    
+    
+    <br>
+    
+    <!-- strong tags make the text bold -->
+    <a href="https://www.google.com" target="_blank"><strong>Google</strong></a>
+    
+    <br>
+    
+    <!-- the # will allow the link to be clicked but will not receive an error
+    Use as a placeholder when coding as maybe don't want to hunt down links at this particular time -->    
+    <a href="#" >Link does not go anywhere</a>
+    
+
+</div>
+
+
+
+
+
+</body>
+</html>

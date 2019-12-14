@@ -1,0 +1,87 @@
+body{
+    background-color: lightgray;
+}
+
+
+/* have the selector first to tell CSS what element to style */
+
+h1 {
+    background-color: black;
+    color: white;
+}
+  
+/* sizing image 
+This will make ALL images this size.  If want different sizes, then need to create classes 
+Best to style in CSS versus HTML */
+
+img {
+    width: 200px;
+    height: 200px;
+   
+}
+
+/* This uses a class of .profile-image to know what to style
+. = class */
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    
+    /* use float to move the image to the left when all other information within div is centered 
+        float allows text to show around the image
+        if use text-align then the image would take up the wholine then no text would be able to go beside it but would need create a new class */
+
+        /* float can cause issues when have margins or padding as the image may not "go" where you want it to in a colored background   */
+    float: left;
+    margin: 5px 10px 5px 10px;
+}
+
+/* This uses an ID of profile-name to know what to style
+# = ID */
+
+#profile-name {
+    font-size = 18px;
+    color: red;
+
+}
+
+/* test to show that ID has more "weight"/ takes precedence over class 
+h2 text color will stay red from above */
+
+.h2-name {
+    color: blue;
+}
+
+/* Test - This is using the html selector. This has the lowest weight so will not take unless the other 2 are commented out */
+
+h2 {
+    color: green;
+}
+
+/* center all text */
+.centered{
+    text-align: center;
+}
+.img-div {
+
+    background-color: lightgreen;
+}
+
+.text-div{
+
+    background-color: lightsalmon;
+    float:left;
+
+    /* this makes the div 1/3 of the width of the page */
+    width: 33%;
+}
+
+.list-div{
+    background-color: peru;
+    float: left;
+
+     /* this makes the div 1/2 of the width of the page.  If there is not enough room then may nee to make smaller.  
+     If there is no enough room it will push the text to the next line */
+    width: 50%;
+}
+
